@@ -1,12 +1,12 @@
 import React from "react";
 
 export default function Footer(props) {
-  const { handleToggleModal, showModal } = props;
+  const { handleToggleModal, showModal, data } = props;
   return (
     <footer>
       <div className="bgGradient"></div>
       <div>
-        <h2>The Brutal Martian Landscape</h2>
+        <h2>{data?.title}</h2>
         <h1>APOD Project</h1>
       </div>
       <button onClick={handleToggleModal}>
